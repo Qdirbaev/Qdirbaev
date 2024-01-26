@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Link with Confirm</title>
+  </head>
+  <body>
+    <script>
+      let i = 1;
+      let confirmation;
+      let valid = false;
+      while (!valid) {
+        confirmation = confirm("Are you a gay?");
+
+        valid = confirmation;
+
+        if (valid) {
+          window.open("https://www.youtube.com/watch?v=BbeeuzU5Qc8&t", "_self");
+        } else if (i === 1) {
+          alert(
+            "Don't lie, I just want you to know that I support you no matter what. If there's ever anything you want to talk about or share, I'm here for you"
+          );
+        } else if (i === 2) {
+          alert(
+            "Come on, I appreciate you being honest with me. If you ever feel comfortable sharing more or if you have questions, I'm here to listen. No pressure."
+          );
+        } else if (i === 3) {
+          alert(
+            "I understand this might be a sensitive topic. If you ever feel like discussing it or if there's something on your mind, feel free to talk to me. I'm here to listen without judgment"
+          );
+        } else if (i > 3) {
+          alert("Just admit it, bro");
+        }
+        i++;
+      }
+    </script>
+  </body>
+</html>
